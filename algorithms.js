@@ -1,9 +1,10 @@
 
-function chunkArrayInGroups(arr, size) {
-  // Break it up.
-  
-  // we solved the algorithm 
-  return arr;
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  return str; [0][i]
+  [1][i]
+  [2][i]
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+confirmEnding("Bastian", "n");

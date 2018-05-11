@@ -1,6 +1,7 @@
 
-function factorialize(num) {
-  return num*50;
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  return arr;
 }
 
-factorialize(5);
+chunkArrayInGroups(["a", "b", "c", "d"], 2);

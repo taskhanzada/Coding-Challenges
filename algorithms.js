@@ -4,9 +4,7 @@ function confirmEnding(str, target) {
   // -- Falcor
   
   // we solved the algorithm
-  return str; [0][i]
-  [1][i]
-  [2][i]
+ // we solved it again
 }
 
 confirmEnding("Bastian", "n");

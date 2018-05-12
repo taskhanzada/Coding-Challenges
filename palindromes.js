@@ -11,11 +11,13 @@ We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race
 We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2". */
 
 
+
 function palindrome(str) {
-  // Good luck!
-  return true;
+ 
+  let replace = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+
+  let reverse = replace.split("").reverse().join("")
+return replace === reverse;
+ 
+
 }
-
-
-
-palindrome("eye");

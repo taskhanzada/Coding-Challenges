@@ -2,7 +2,20 @@
 
 function repeatStringNumTimes(str, num) {
   // repeat after me
-  return str;
-}
+  
+   var poop = "";
+    if(num < 0){
+    return "";
+    
+  }else{
+    
+   for(var i=0; i < num;i++){
+     
+    poop += str;
+     
+   }
+    
+  }
 
-repeatStringNumTimes("abc", 3);
+  return poop;
+}

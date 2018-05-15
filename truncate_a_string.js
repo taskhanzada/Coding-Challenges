@@ -4,9 +4,16 @@
 
 //However, if the given maximum string length num is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.
 
+
 function truncateString(str, num) {
   // Clear out that junk in your trunk
-  return str;
+  if(str.length > num && num > 3){
+    return str.substr(0,num-3)+ "...";
+  }else if (num <= 3){
+    return str.substr(0,num) + "...";
+  }else {
+    return str;
+  }
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 11);

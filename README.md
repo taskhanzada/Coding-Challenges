@@ -1,2 +1,2 @@
 # Coding-Challenges
-Bootcamp Coding Algorithms
+Javascript Coding Algorithms

@@ -7,7 +7,11 @@
 
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  return arr;
+  let pee = arr.filter(function(poop){
+    return Boolean(poop);
+  }); return pee
+  
+
 }
 
-bouncer([7, "ate", "", false, 9]);
+bouncer([7, "ate", "", false, 7, 7, ]);

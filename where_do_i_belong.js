@@ -7,7 +7,13 @@
 
 function getIndexToIns(arr, num) {
   // Find my place in this sorted array.
-  return num;
+ 
+  arr.push(num);
+ return arr.sort(function(a,b){
+    return a - b;
+  }).indexOf(num)
+
+  
 }
 
-getIndexToIns([40, 60], 50);
+getIndexToIns([40, 60,4,33], 50);

@@ -1,20 +1,9 @@
-function destroyer(arr) {
-  // Remove all the values
- let newArr = [].slice.call(arguments);
- let newArr2 = [];
- let newArr3 = [];
- let finalArr = [];
+//You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 
- 
- for(var i =0; i < newArr[0].length;i++){
-  newArr2.push(newArr[0][i]);
- }
-for(var j = 1; j < newArr.length; j++){
-   newArr3.push(newArr[j]);
+
+function destroyer(arr) {
+  var args = [].slice.call(arguments).slice(1);
+  return arr.filter(val => (args.indexOf(val) === -1))
 }
 
-for(var t = 0; t < newArr2.length; t++){
-  if(newArr3.indexOf(newArr2[t]) === -1){
-    finalArr.push(newArr2[t]);
-  }
-}return finalArr;
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

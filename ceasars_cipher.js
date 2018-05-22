@@ -7,10 +7,31 @@
 //All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.
 
 
-
 function rot13(str) { // LBH QVQ VG!
+var arr = [];
+var arr2 = [];
+var arr3 = [];
+  for(var i = 0; i < str.length; i++){
+   arr.push(str.charCodeAt(i));
+  }
+  for(var j = 0; j < arr.length; j++){
+    if(arr[j] >= 65 && arr[j] <= 77){
+    arr2.push(arr[j] += 13); 
+    } else if(arr[j] >= 78) {
+      arr2.push(arr[j] -= 13)
+    }
+      else {
+      arr2.push(arr[j]);
+  }
+  }
+  for(var k = 0; k < arr2.length; k++){
+    
+    arr3.push(String.fromCharCode(arr2[k]));
+  }return arr3.join("");
+
+ 
   
-  return str;
+ 
 }
 
 // Change the inputs below to test

@@ -1,4 +1,3 @@
-
 function destroyer(arr) {
   // Remove all the values
  let newArr = [].slice.call(arguments);

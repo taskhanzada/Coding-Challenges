@@ -5,3 +5,16 @@
 // It’s guaranteed that array contains more than 3 numbers.
 
 // The tests contain some very huge arrays, so think about performance.
+
+
+function findUniq(arr) {
+  // do magic
+  for(let i = 1; i < arr.length; i++){
+    if(arr[0] !== arr[i]){
+      if(arr[i] === arr[i+1]){
+        return arr[0];
+      }
+      return arr[i];
+    }
+  }
+}

@@ -26,3 +26,33 @@
 
 // Note:
 // If you are given an array with multiple answers, return the lowest correct index.
+
+function findEvenIndex(arr)
+{
+  //Code goes here!
+let sum1 = 0;
+let sum2 = 0;
+let ans = -1;
+
+for(let i = 0; i < arr.length; i++){
+  for(let j = i; j >= 0; j--){
+    sum1 += arr[j];
+  }
+  for(let k = i; k < arr.length; k++){
+    sum2 += arr[k];
+
+  }
+   if(sum1 === sum2){
+    ans = i;
+  }
+  sum1 = 0;
+  sum2 = 0;
+
+ 
+
+}
+
+  return ans;
+}
+
+findEvenIndex([1,2,3,4,3,2,1])

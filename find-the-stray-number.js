@@ -7,3 +7,17 @@
 // Examples
 // [1, 1, 2] ==> 2
 // [17, 17, 3, 17, 17, 17, 17] ==> 3
+
+
+function stray(numbers) {
+
+for(let i = 0; i <numbers.length; i++){
+  let lucky = numbers.filter(function(number) {
+  return number !== numbers[i];
+});
+  if(lucky.length === 1){
+    return lucky[0];
+  }
+}
+
+}

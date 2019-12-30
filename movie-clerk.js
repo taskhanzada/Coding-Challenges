@@ -35,5 +35,5 @@ function tickets(peopleInLine) {
     }
   }
   
-  return 'YES'
+  return  'YES'
 }

@@ -8,4 +8,18 @@
 
 var uniqueInOrder=function(iterable){
   //your code here - remember iterable can be a string or an array
+  let ans = [];
+
+  for(let i = 0; i < iterable.length; i++){
+    let curr = iterable[i];
+    let next = iterable[i+1];
+    if(curr !== next){
+      ans.push(curr)
+    }
+  }
+  return ans;
+
 }
+
+
+uniqueInOrder('AAAABBBCCDAABBB')

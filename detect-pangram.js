@@ -4,6 +4,15 @@
 
 
 function isPangram(string){
+  //...
+ let key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"];
+  let blue = string.toLowerCase();
+ let red = blue.split("");
 
+ let ans = key.filter((char) =>{
+  return red.indexOf(char) === -1;
+ })
+ 
+ return ans.length === 0;
 }
 isPangram("The quick brown fox jumps over the lazy dog.")

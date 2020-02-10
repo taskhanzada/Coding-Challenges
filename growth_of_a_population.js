@@ -15,5 +15,12 @@
 // p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
 
 function nbYear(p0, percent, aug, p) {
-    // your code
+  let count = 0;
+  percent = percent/100;
+  for(let i = p0; i < p; i+=aug){
+    i += (i * percent);
+    count++;
+  }
+    return count;
 }
+

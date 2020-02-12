@@ -3,8 +3,16 @@
 
 // Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
-
 function spinWords(str){
   //TODO Have fun :)
-
+  let strArr = str.split(" ");
+  let ans = strArr.map((x) => {
+   
+    if(x.length > 4){
+     return x.split("").reverse().join("")
+    }
+    return x;
+  });
+  return ans.join(" ");
 }
+

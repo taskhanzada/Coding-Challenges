@@ -8,5 +8,7 @@
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 function arrayDiff(a, b) {
-  
+ let ans = a.filter(x => b.indexOf(x) === -1);
+ return ans;
 }
+

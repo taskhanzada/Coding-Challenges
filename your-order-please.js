@@ -12,4 +12,18 @@
 
 function order(words){
   // ...
+  let splitStr = words.split(" ");
+  let ans = [];
+  let count = 1;
+  for(let i = 0; i < splitStr.length; i++){
+    if(splitStr[i].indexOf(count) >= 0){
+     
+      ans.push(splitStr[i])
+      count++;
+      i = -1;
+    }
+
+   }
+  return ans.join(" ");
 }
+order("is2 Thi1s T4est 3a"  )

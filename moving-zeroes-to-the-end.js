@@ -4,4 +4,21 @@
 
 var moveZeros = function (arr) {
   // TODO: Program me
+  let count = 0;
+  let ans = arr.filter(x => {
+     if(x === 0){
+      count++
+    }
+    return x !== 0;
+   
+  })
+
+  for(let i = 0; i < count; i++){
+    ans.push(0)
+  }
+  return ans;
 }
+
+
+
+moveZeros([false,1,0,1,2,0,1,3,"a"])
